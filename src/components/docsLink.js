@@ -8,14 +8,14 @@ const DocsLink = props => {
         <h4 className="grey-text" style={{ margin: "0px" }}>
           <strong>{props.title}</strong>
         </h4>
-        <a
+        <href
           className=" green-text px-1 "
           target="_blank"
           
         >
           <MDBIcon icon="graduation-cap" className="mr-2" />
           
-        </a>
+        </href>
       </MDBRow>
       <hr className="mb-5" />
     </>

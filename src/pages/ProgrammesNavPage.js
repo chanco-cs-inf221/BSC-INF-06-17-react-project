@@ -6,7 +6,7 @@ const ProgrammesNavPage = () => {
   return (
     <MDBContainer>
       <MDBRow>
-        <MDBCol md="4" className="mt-3 mx-auto">
+        <MDBCol md="4" className="mt-auto mx-auto">
           <MDBJumbotron>
             <h1>
               <MDBIcon icon="cubes" className="green-text" /> Programmes

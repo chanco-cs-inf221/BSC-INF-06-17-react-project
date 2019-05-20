@@ -5,7 +5,10 @@ import { BrowserRouter as Router } from "react-router-dom";
 import Routes from "./Routes";
 import './App.css';
 
+
 class App extends Component {
+
+  
 
   state={
     collapseID: ""
@@ -30,10 +33,10 @@ class App extends Component {
     );
 
     const { collapseID } = this.state;
-
+  
     return (
       <Router>
-        <div className="flyout">
+        <div className="window">
           <MDBNavbar color="indigo" dark expand="md" fixed="top" scrolling>
             <MDBNavbarBrand href="/">
               <Logo style={{ height: '2.5rem', width: "2.5rem" }} />
@@ -41,7 +44,7 @@ class App extends Component {
             </MDBNavbarBrand>
             <MDBNavbarToggler onClick={this.toggleCollapse("mainNavbarCollapse")} />
             <MDBCollapse
-              id="mainNavbarCollapse"
+              id="NavbarCollapse"
               isOpen={this.state.collapseID}
               navbar
             >
@@ -92,7 +95,7 @@ class App extends Component {
                     onClick={this.closeCollapse("mainNavbarCollapse")}
                     to="/forms"
                   >
-                    Regstration
+                    Registration
                   </MDBNavLink>
                 </MDBNavItem>
                 <MDBNavItem>

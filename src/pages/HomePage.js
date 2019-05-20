@@ -1,7 +1,7 @@
 import React from "react";
-import { MDBEdgeHeader, MDBFreeBird, MDBContainer,MDBCol, MDBRow, MDBCardBody, MDBIcon, MDBNavLink,MDBNavbarBrand } from "mdbreact";
+import { MDBEdgeHeader,MDBContainer,MDBCol, MDBRow, MDBIcon, MDBNavLink, } from "mdbreact";
 import "./HomePage.css";
-import students from "./students.png";
+import students from "./students.jpg";
 import chanco1 from "./chanco1.ico";
 
 
@@ -10,29 +10,37 @@ class HomePage extends React.Component {
     return (
       <div>
         
-        <MDBEdgeHeader className="color green"  >
+        <MDBEdgeHeader className="color light-green "  >
         <img
               alt="students"
               
               src={students}
-              style={{ height: "100%", width: "100%" }}
+              style={{ height: '20rem', width: '100rem' }}
             /> 
-          
+          <div className="text-center"><img
+              alt="chanco1"
+              
+              src={chanco1}
+              style={{ height: '9rem', width: '10rem', top: '30' }}
+            />
+            </div> 
       </MDBEdgeHeader>
-        <MDBFreeBird>
+     
+      <br></br><br></br><br></br><br></br><br></br><br></br>
+   {/* <MDBFreeBird>
           <MDBRow>
           <MDBCol
             md="10"
-              className="mx-auto float-none white z-depth-1 py-2 px-2"
+              className="mx-auto float-none white z-depth-4 py-2 px-1"
             >
               <MDBCardBody>
-                <p className="text-color indigo white-text">
+                <p className="text-color blue white-text">
                 <h2 className="h2-responsive mb-4 text-center">
                 <img
               alt="chanco1"
               
               src={chanco1}
-              style={{ height: "100px", width: "15%" }}
+              style={{ height: '9rem', width: '10rem' }}
             /> <br></br>
                   <strong >COMSOC website</strong>
                 </h2>
@@ -58,14 +66,9 @@ class HomePage extends React.Component {
               </MDBCardBody>
             </MDBCol>
           </MDBRow>
-        </MDBFreeBird>
+   </MDBFreeBird>*/}
         <MDBContainer>
-        {/*<img
-              alt="pic1"
-              
-              src={pic1}
-              style={{ height: "100%", width: "100%" }}
-        /> */}
+      
           <MDBRow>
             <MDBCol md="10" className="mx-auto mt-4">
               <h2 className="text-center my-4 font-weight-bold">
@@ -73,7 +76,7 @@ class HomePage extends React.Component {
               </h2>
               <p className="text-center font-weight-bold brown-text">
                 The society aims at helping students from Programming related courses
-                 in different aspects conserning Programming.
+                 in different aspects concerning Programming.
   
               </p>
               <p className="text-center font-weight-bold brown-text">
@@ -82,7 +85,7 @@ class HomePage extends React.Component {
               </p>
               <p className="text-center font-weight-bold brown-text">
                 Now we are presenting you with the COMSOC website with all import components 
-                and features at galance. 
+                and features at glance. 
     
               </p>
               <p className="text-center font-weight-bold brown-text">
@@ -103,12 +106,12 @@ class HomePage extends React.Component {
                   <MDBCol size="10" md="8" lg="10" className="float-right" height="15px">
                     <h4 className="font-weight-bold">PEOPLE</h4>
                     <p className="grey-text">
-                      Contains COMSOC staff members, COMSOC regsterd members, all bsc/com, 
+                      Contains COMSOC staff members, COMSOC registered members, all bsc/com, 
                       bsc/inf and bsc/net <br></br> students.
                     </p>
                     <MDBNavLink
                       tag="button"
-                      className="btn btn-sm indigo text-white" 
+                      className="btn btn-sm blue text-white" 
                       to="people"
                     >
                       People
@@ -122,12 +125,12 @@ class HomePage extends React.Component {
                   <MDBCol size="10" md="8" lg="10" className="float-right">
                     <h4 className="font-weight-bold">PROGRAMMES</h4>
                     <p className="grey-text">
-                     Contains regsterd members from bsc/com, bsc/inf and bsc/net 
+                     Contains registered members from bsc/com, bsc/inf and bsc/net 
                      and more information for those courses.
                     </p>
                     <MDBNavLink
                       tag="button"
-                      className="btn btn-sm indigo text-white"
+                      className="btn btn-sm blue text-white"
                       to="/programmes"
                     >
                       Programmes
@@ -146,7 +149,7 @@ class HomePage extends React.Component {
                     </p>
                     <MDBNavLink
                       tag="button"
-                      className="btn btn-sm indigo text-white" 
+                      className="btn btn-sm blue text-white" 
                       to="matrials"
                     >
                       Materials
@@ -163,11 +166,12 @@ class HomePage extends React.Component {
                     <h4 className="font-weight-bold">NEWS</h4>
                     <p className="grey-text">
                       Real time technological news from the collage, within the nation 
-                      and around the grabal.
+                      and around the global.
+                      <br></br>
                     </p>
                     <MDBNavLink
                       tag="button"
-                      className="btn btn-sm indigo text-white"
+                      className="btn btn-sm blue text-white"
                       to="/news"
                     >
                       News
@@ -181,12 +185,13 @@ class HomePage extends React.Component {
                   <MDBCol size="10" md="8" lg="10" className="float-right" height="10px">
                     <h4 className="font-weight-bold">REGISTRATION</h4>
                     <p className="grey-text">
-                     Be a regsterd COMSOC member and ejoy all its evnts and 
+                     Be a registered COMSOC member and enjoy all its events and 
                      be an advanced student.
+                     
                     </p>
                     <MDBNavLink
                       tag="button"
-                      className="btn btn-sm indigo text-white"
+                      className="btn btn-sm blue text-white"
                       to="/forms"
                     >
                       Register
@@ -202,11 +207,11 @@ class HomePage extends React.Component {
                     <p className="grey-text height-2x">
                       COMSOC events,<br></br> programs and <br></br>activities                              
                                
-                                
+                       <br></br>         
                     </p>
                     <MDBNavLink
                       tag="button"
-                      className="btn btn-sm indigo text-white" 
+                      className="btn btn-sm blue text-white" 
                       to="tables"
                     >
                       Events
